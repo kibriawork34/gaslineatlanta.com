@@ -15,8 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $headers = "From: $email";
   
   // Send email
- // $to = 'kibriatest@gmail.com';
-     $to = 'keikaplumbing@gmail.com';
+  $to = 'kibriatest@gmail.com';
+   //  $to = 'keikaplumbing@gmail.com';
   if (mail($to, $subject, $body, $headers)) {
     echo '<h5>Thank you for your appointment request!. We will contact you soon.</h5>';
   } else {
